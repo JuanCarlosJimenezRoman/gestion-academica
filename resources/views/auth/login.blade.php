@@ -3,10 +3,7 @@
     <x-auth-session-status class="mb-6 p-4 bg-blue-50 text-blue-800 rounded-lg" :status="session('status')" />
 
     <div class="text-center mb-8">
-        <h1 class="text-3xl font-bold text-gray-800">MindBox</h1>
-        <p class="text-gray-600 italic mt-2">
-            "La educación es el arma más poderosa que puedes usar para cambiar el mundo" - Nelson Mandela
-        </p>
+
     </div>
 
     <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-blue-600">
@@ -15,7 +12,7 @@
 
             <!-- Email Address -->
             <div>
-                <x-input-label for="email" :value="__('Correo electrónico')" class="block text-sm font-medium text-gray-700 mb-1" />
+                <x-input-label for="email" :value="__('Correo electrónico')" class="block text-sm font-medium text-black cmb-1" />
                 <x-text-input
                     id="email"
                     class="block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-150"
@@ -32,10 +29,10 @@
 
             <!-- Password -->
             <div>
-                <x-input-label for="password" :value="__('Contraseña')" class="block text-sm font-medium text-gray-700 mb-1" />
+                <x-input-label for="password" :value="__('Contraseña')" class="block text-sm font-medium text-black mb-1" />
                 <x-text-input
                     id="password"
-                    class="block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-150"
+                    class="block w-full px-4 py-3 border border-black rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-150"
                     type="password"
                     name="password"
                     required

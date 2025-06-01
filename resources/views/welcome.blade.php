@@ -56,9 +56,11 @@
     <header class="py-6 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center">
-                <div class="text-2xl font-bold text-blue-600">MindBox</div>
+                <a href="/">
+        <div class="text-2xl font-bold text-blue-600">MindBox</div>
+    </a>
                 <div class="ml-4 text-sm italic text-gray-600 mindbox-quote hidden md:block">
-                    "La educación es el arma más poderosa que puedes usar para cambiar el mundo" - Nelson Mandela
+
                 </div>
             </div>
             <nav>
