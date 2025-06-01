@@ -24,9 +24,11 @@ class DocenteController extends Controller
      * Show the form for creating a new resource.
      */
     public function create()
-    {
-        return view('admin.docentes.create');
-    }
+{
+    $departamentos = Departamento::all();
+    return view('admin.docentes.create', compact('departamentos'));
+}
+
 
     /**
      * Store a newly created resource in storage.
