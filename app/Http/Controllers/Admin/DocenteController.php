@@ -63,8 +63,8 @@ class DocenteController extends Controller
      */
     public function edit(string $id)
     {
-        $docente = Docente::findOrFail($id);
-        return view('admin.docentes.edit', compact('docente'));
+        $docente = Docente::findOrFail($id);            $departamentos = Departamento::all();
+        return view('admin.docentes.edit', compact('docente', 'departamentos'));
     }
 
     /**
