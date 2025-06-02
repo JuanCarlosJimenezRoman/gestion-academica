@@ -5,6 +5,8 @@ namespace App\Providers;
 use App\Models\User;
 use App\Models\Estudiante;
 use App\Models\Docente;
+USE App\Models\Materia;
+use App\Observers\MateriaObserver;
 use App\Observers\LogSistemaObserver;
 use App\Observers\EstudianteObserver;
 use App\Observers\DocenteObserver;
@@ -27,5 +29,6 @@ class AppServiceProvider extends ServiceProvider
     {
         Estudiante::observe(EstudianteObserver::class);
         Docente::observe(DocenteObserver::class);
+        Materia::observe(MateriaObserver::class);
     }
 }
