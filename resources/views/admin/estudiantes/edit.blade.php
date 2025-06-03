@@ -29,7 +29,7 @@
                         <label class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Retícula</label>
                         <select name="id_reticula" class="w-full border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition duration-300">
                             @foreach($reticulas as $reticula)
-                                <option value="{{ $reticula->id }}" {{ $reticula->id == $estudiante->id_reticula ? 'selected' : '' }}>{{ $reticula->nombre }}</option>
+                                <option value="{{ $reticula->id_reticula}}"> {{ $reticula->carrera}}</option>
                             @endforeach
                         </select>
                     </div>
