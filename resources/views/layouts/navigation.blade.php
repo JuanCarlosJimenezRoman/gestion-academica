@@ -27,6 +27,9 @@
                     <x-nav-link :href="route('admin.logs.index')" :active="request()->routeIs('admin.logs.*')" class="text-white hover:bg-blue-700 px-3 py-2 rounded-md transition duration-300">
                         {{ __('Logs') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('admin.grupos.index' )" :active="request()->routeIs('admin.grupos.*')" class="text-white hover:bg-blue-700 px-3 py-2 rounded-md transition duration-300">
+                        {{ __('Grupos')}}
+                    </x-nav-link>
                 </div>
             </div>
 

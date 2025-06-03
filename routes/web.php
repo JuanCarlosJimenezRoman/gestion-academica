@@ -7,6 +7,9 @@ use App\Http\Controllers\Admin\EstudianteController;
 use App\Http\Controllers\Admin\DocenteController;
 use App\Http\Controllers\Admin\MateriaController;
 use App\Http\Controllers\Admin\LogController;
+use App\Http\Controllers\Admin\GrupoController;
+use App\Http\Controllers\Admin\AulaController;
+use App\Http\Controllers\Admin\InscripcionController;
 
 Route::aliasMiddleware('role', CheckRole::class);
 
@@ -61,6 +64,34 @@ Route::resource('estudiantes', EstudianteController::class)->names([
         'edit' => 'admin.materias.edit',
         'update' => 'admin.materias.update',
         'destroy' => 'admin.materias.destroy'
+    ]);
+    Route::resource('grupos', GrupoController::class)->names([
+        'index' => 'admin.grupos.index',
+        'create' => 'admin.grupos.create',
+        'store' => 'admin.grupos.store',
+        'show' => 'admin.grupos.show',
+        'edit' => 'admin.grupos.edit',
+        'update' => 'admin.grupos.update',
+        'destroy' => 'admin.grupos.destroy'
+    ]);
+    Route::resource('aulas', AulaController::class)->names([
+        'index' => 'admin.aulas.index',
+        'create' => 'admin.aulas.create',
+        'store' => 'admin.aulas.store',
+        'show' => 'admin.aulas.show',
+        'edit' => 'admin.aulas.edit',
+        'update' => 'admin.aulas.update',
+        'destroy' => 'admin.aulas.destroy'
+    ]);
+
+    Route::resource('inscripciones', InscripcionController::class)->names([
+        'index' => 'admin.inscripciones.index',
+        'create' => 'admin.inscripciones.create',
+        'store' => 'admin.inscripciones.store',
+        'show' => 'admin.inscripciones.show',
+        'edit' => 'admin.inscripciones.edit',
+        'update' => 'admin.inscripciones.update',
+        'destroy' => 'admin.inscripciones.destroy'
     ]);
 
     // Logs del sistema

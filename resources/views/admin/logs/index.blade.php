@@ -67,6 +67,7 @@
     </div>
     <!-- Modal de Búsqueda -->
     <!-- En tu archivo de vista -->
+    <!--
 <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -78,7 +79,8 @@
             </div>
             <form action="{{ route('admin.logs.search') }}" method="GET">
                 <div class="modal-body grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <!-- Columna 1 -->
+
+
                     <div class="space-y-4">
                         <div>
                             <label for="tipo_accion" class="block text-sm font-medium text-gray-700">Tipo de Acción</label>
@@ -102,7 +104,7 @@
                         </div>
                     </div>
 
-                    <!-- Columna 2 -->
+
                     <div class="space-y-4">
                         <div>
                             <label for="usuario" class="block text-sm font-medium text-gray-700">Usuario (ID, nombre o email)</label>
@@ -149,7 +151,7 @@
         </div>
     </div>
 </div>
-
+-->
     @push('styles')
     <style>
         .badge-admin {
